@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="bilangan_prima"/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-17 04:56:35 PM"/>
+        <attribute name="created" value="dXNlcjtMQVBUT1AtNEc3MTlVQ0Y7MjAyNS0xMC0xNzswNDo1NjoyOCBQTTsyNzQ5"/>
+        <attribute name="edited" value="dXNlcjtMQVBUT1AtNEc3MTlVQ0Y7MjAyNS0xMC0xNzswNDo1NjozMSBQTTsxO0FTVVM7TEFQVE9QLVZCUEhFRzRPOzIwMjUtMTAtMTc7MDEuMTUuNTQgUE07YmlsYW5nYW5fcHJpbWFbMV0uZnByZzs3Nzkz"/>
+        <attribute name="edited" value="dXNlcjtMQVBUT1AtNEc3MTlVQ0Y7MjAyNS0xMC0xNzswNDo1NjozNSBQTTsxOzI4NTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, i, faktor" type="Integer" array="False" size=""/>
+            <input variable="x"/>
+            <assign variable="i" expression="1"/>
+            <assign variable="faktor" expression="0"/>
+            <while expression="i&lt;=x">
+                <if expression="x%i==0">
+                    <then>
+                        <assign variable="faktor" expression="faktor + 1"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="i" expression="i + 1"/>
+            </while>
+            <if expression="faktor=2">
+                <then>
+                    <output expression="&quot;prima&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;bukan prima&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
